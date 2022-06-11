@@ -227,6 +227,9 @@
     justify-self: end;
 }
 
+.action-block > img:hover{
+    background-color: plum;
+}
 .news{
   grid-area: news;
   margin: 60px 0px 20px 20px;
