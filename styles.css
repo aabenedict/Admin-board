@@ -1,0 +1,266 @@
+* {
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  ul {
+    list-style-type: none;
+}
+
+  
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 2r 1fr;
+    grid-template-rows: 2fr 3fr;
+    grid-template-areas:
+    "searchbar userinfo"
+    "greeting nav";
+    box-shadow: 0 5px 5px #e2e8f0;
+    z-index: 1;
+}
+
+
+
+.searchbar {
+    grid-area: searchbar;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.searchbar>input {
+    background-color: #f1f5f9;
+    border: none;
+    margin-left: 100px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+    height: 35px;
+    width: 800px;
+    color: #475569;
+}
+
+.userinfo {
+    grid-area: userinfo;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 2fr;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.userinfo > #bell {
+    justify-self: end;
+    height: 1fr;
+
+}
+
+.profile {
+    justify-self: center;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.userinfo > h3 {
+    justify-self: start;
+    font-size: 1.4rem;
+}
+
+.welcome-container {
+    grid-area: greeting;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
+.greeting > .profile {
+    justify-self: end;
+    margin-right: 15px;
+    font-size: 26px;
+    padding: 15px;
+}
+
+#user-greeting > p {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#user-greeting > h3 {
+    font-size: 2rem;
+}
+
+.btn-container {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-self: center;
+}
+
+.btn-container > button {
+    border: none;
+    border-color: black;
+    border-radius: 25px;
+    padding: 8px 30px;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-right: 30px;
+    background-color: thistle;
+}
+
+.header-btn:hover {
+    background-color: plum;
+}
+
+.side-bar {
+    z-index: 2;
+    grid-area: sidebar;
+    background-color: thistle;
+    color: #fff;
+    font-size: 2em;
+}
+
+.side-bar > div {
+    margin-left: 40px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.side-bar > div > ul {
+    list-style-type: none;
+}
+
+.side-bar > div > ul > li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.side-bar > div > ul > li> img {
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
+
+.links > ul > li:hover{
+    background-color: plum;
+}
+
+.secondary-links> ul > li:hover{
+    background-color: plum;
+}
+
+.secondary-links{
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+
+.content {
+    grid-area: main;
+    background-color: #f1f5f9;
+    display: grid;
+    grid-template-columns: 3fr .2fr;
+}
+
+
+.projects{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1r;
+    grid-template-rows: 75px 1fr 1fr 1fr;
+    padding-left: 50px;
+    gap: 20px;
+    grid-template-areas: 
+    "h4 h4 news"
+    "card card2 news"
+    "card card2 news"
+    "card card2 news"
+}
+
+.projects > h4{
+    grid-area: h4;
+    place-self: center;
+    font-size: 2.5rem;
+    padding:0px;
+}
+
+.project{
+    border-left: 10px solid slategray;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 0px 20px 20px 20px;
+    display: grid;
+    grid-area: card card2;
+    font-size: 1.6rem;
+}
+
+.text-block{
+    padding:40px;
+}
+
+.action-block{
+    height: 20px;
+    padding-top:40px;
+    justify-self: end;
+}
+
+.news{
+  grid-area: news;
+  margin: 60px 0px 20px 20px;
+  padding: 40px;
+  width:80%;
+  
+}
+
+.annouce{
+    border-bottom: 2px solid lightgray;
+    
+}
+
+.announcements{
+    background-color: white;
+    font-size: 1.1rem;
+    border-left: 10px solid slategrey;
+    border-radius: 10px;
+    padding: 20px 0px 15px 20px;
+}
+
+.trending{
+    margin-top: 20px;
+    padding: 20px 0px 15px 20px;
+    background-color: white;
+    font-size: 1.1rem;
+    border-left: 10px solid slategray;
+    border-radius: 10px
+}
+
+.trends{
+    border-bottom: 2px solid lightgrey;
+}
+
+
+
+
