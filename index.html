@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,35 +13,34 @@
 </head>
 <body>
 <div class="container">
+    <!-- Header Styles -->
     <header class="header">
-        <div class="searchbar">
-            <input type="text" placeholder="Search Jokes">
-            <label for="search"><img src="./img/search.svg" alt="search"></label>
+        <div class="dashboard">
+            <h2>Dashboard</h2>
+            <div class="btn-container">
+                <button class="header-btn">Upload</button>
+            </div>
         </div>
-        <div class="userinfo">
+        <h1 class="title" >Sam Lam Electrician</h1>
+        <button class="bell">
             <img id="bell" src="./img/bell.png" alt="bell">
-            <img class="profile" src="./img/dad.png" alt="user profile image">
-            <h3 class="user-name">SamLamElectrician</h3>
-        </div>
-        <div class="welcome-container">
-            <img class="profile" src="./img/dad.png" alt="user profile image">
-            <div id="user-greeting">
-                <p>Welcome back,</p>
-                <h3>SamLamElectrician</h3>
-            </div>        
-        </div>
-        <div class="btn-container">
-            <button class="header-btn">New Post</button>
-            <button class="header-btn">Upload</button>
-            <button class="header-btn">Share</button>
+        </button>
+        <div class="user">
+            <form class="searchbar" action="">
+                <input type="text">
+                <button type="submit"><img src="./img/search.svg" alt="search"></button>
+            </form>
+            <button class="profile">
+                <img src="./img/dad.png" alt="user profile image">
+            </button>
+            <button class="settings">
+                <img src="./img/management.png" alt="manage profile settings">
+            </button>
         </div>
     </header> 
+
     <!--Navigation bar-->
     <nav class="side-bar">
-        <div class="logo" alt="home logo">
-            <!--add image for logo-->
-            <h3>Dashboard</h3>
-        </div>
         <div class="links">
             <ul>
                 <li>
@@ -77,136 +77,55 @@
                 </li>
                 <li>
                     <img src="./img/privacy.png" alt="Privacy">
-                    Privacy         
+                    Privacy  
+                </li>  
+                <button class="new-post">New Post</button> 
         </div>
     </nav>
-    <!--Right annoucement bar-->
    
-   <!--Content-->
+   <!--Main-->
    <main class="content">
-    <div class="projects">
-        <h4>Your Projects</h4>
-        <div class="project">
-            <div class="color-block"></div>
-            <div class="text-block">
-                <h5 class="project-name">What's brown and sticky</h5>
-                <p>A Stick</p>
+        <section class="section-one">
+            <div class="projects">
+                <ul class="project">
+                    <li class="question">whats brown and sticky?</li>
+                    <li class="answer">Hover to Reveal</li>
+                </ul>
+                <ul class="action-block">
+                    <li><img src="./img/save.png" alt="save icon" class="action-img"></li>
+                    <li><img src="./img/delete.png" alt="delete icon" class="action-img"></li>
+                    <li><img src="./img/share.png" alt="share icon" class="action-img"></li>
+                </ul>
             </div>
-            <div class="action-block">
-                <img src="./img/save.png" alt="save icon" class="action-img">
-                <img src="./img/delete.png" alt="delete icon" class="action-img">
-                <img src="./img/share.png" alt="share icon" class="action-img">
-            </div>
-        </div>
-        <div class="project">
-            <div class="color-block"></div>
-            <div class="text-block">
-                <h5 class="project-name">What do you call a fake noodle?</h5>
-                <p>Impasta</p>
-            </div>
-            <div class="action-block">
-                <img src="./img/save.png" alt="save icon" class="action-img">
-                <img src="./img/delete.png" alt="delete icon" class="action-img">
-                <img src="./img/share.png" alt="share icon" class="action-img">
-            </div>
-        </div>
-        <div class="project">
-            <div class="color-block"></div>
-            <div class="text-block">
-                <h5 class="project-name">Why did the scarecrow get promoted?</h5>
-                <p>He was outSTANDING at his job</p>
-            </div>
-            <div class="action-block">
-                <img src="./img/save.png" alt="save icon" class="action-img">
-                <img src="./img/delete.png" alt="delete icon" class="action-img">
-                <img src="./img/share.png" alt="share icon" class="action-img">
-            </div>
-        </div>
-        <div class="project">
-            <div class="color-block"></div>
-            <div class="text-block">
-                <h5 class="project-name">What do you call it when a group of apes start a company</h5>
-                <p>Monkey Business</p>
-            </div>
-            <div class="action-block">
-                <img src="./img/save.png" alt="save icon" class="action-img">
-                <img src="./img/delete.png" alt="delete icon" class="action-img">
-                <img src="./img/share.png" alt="share icon" class="action-img">
-            </div>
-        </div>
-        <div class="project">
-            <div class="color-block"></div>
-            <div class="text-block">
-                <h5 class="project-name">What did the police officer say to his belly-button?</h5>
-                <p>You’re under a vest.</p>
-            </div>
-            <div class="action-block">
-                <img src="./img/save.png" alt="save icon" class="action-img">
-                <img src="./img/delete.png" alt="delete icon" class="action-img">
-                <img src="./img/share.png" alt="share icon" class="action-img">
-            </div>
-        </div>
-        <div class="project">
-            <div class="color-block"></div>
-            <div class="text-block">
-                <h5 class="project-name">Want to know why nurses like red crayons?</h5>
-                <p>Sometimes they have to draw blood.</p>
-            </div>
-            <div class="action-block">
-                <img src="./img/save.png" alt="save icon" class="action-img">
-                <img src="./img/delete.png" alt="delete icon" class="action-img">
-                <img src="./img/share.png" alt="share icon" class="action-img">
-            </div>
-        </div>
-        <div class="news">
-            <div class="announcements">
-                <h2>Announcements</h2>
-                <div class="annouce">
-                        <h4>Site Maintenence</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cupiditate laborum
-                            ipsam, blanditiis quia et perspiciatis...
-                        </p>
-                    </div>
-                    <div class="annouce">
-                        <h4>Community Share Day</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cupiditate laborum
-                            ipsam, blanditiis quia et perspiciatis...
-                        </p>
-                    </div>
-                    <div class="annouce">
-                        <h4>Updated Private Policy</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cupiditate laborum
-                            ipsam, blanditiis quia et perspiciatis...
-                        </p>
-                    </div>
-            </div>
-            <div class="trending">
+            <div class="headings">
                 <h2>Trending</h2>
-                <div class="trends">
-                        <h4>Site Maintenence</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cupiditate laborum
-                            ipsam, blanditiis quia et perspiciatis...
-                        </p>
-                    </div>
-                    <div class="trends">
-                        <h4>Community Share Day</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cupiditate laborum
-                            ipsam, blanditiis quia et perspiciatis...
-                        </p>
-                    </div>
-                    <div class="trends">
-                        <h4>Updated Private Policy</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cupiditate laborum
-                            ipsam, blanditiis quia et perspiciatis...
-                        </p>
-                    </div>
-
-            </div>        
-        </div>
-    </div>
+                <h2>Announcements</h2>
+            </div>
+        </section>
+        <section class="section-two">
+            <div class="announcements">
+                <h3>Announcements</h3>
+                <div class="announce">
+                    <h4>Site Maintenence</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cupiditate laborum
+                        ipsam, blanditiis quia et perspiciatis...
+                    </p>
+                </div>
+                <div class="announce">
+                    <h4>Community Share Day</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cupiditate laborum
+                        ipsam, blanditiis quia et perspiciatis...
+                    </p>
+                </div>
+                <div class="announce">
+                    <h4>Updated Private Policy</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cupiditate laborum
+                        ipsam, blanditiis quia et perspiciatis...
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 </div>
-   <!--Trending bar-->
-    
 </body>
 </html>
