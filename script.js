@@ -32,7 +32,7 @@ app.form.addEventListener('submit', (event) => {
     const firstChild = app.sectionOne.firstChild;
     app.sectionOne.insertBefore(result, firstChild);
 
-    // Attach event listener to delete icon of new result
+    // Attach event listener to delete icon to remove result
     const deleteIcon = result.querySelector(".delete-icon");
     deleteIcon.addEventListener("click", () => {
         result.remove();

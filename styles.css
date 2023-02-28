@@ -8,9 +8,6 @@ html { box-sizing: border-box;}
 
 
 /* Extra Stripping Styles: */
-html {
-    overflow-x: hidden;
-}
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +20,6 @@ button {
 }
 
 /* Base Styles */
-  
 .container {
     height: 100vh;
     display: grid;
@@ -52,7 +48,6 @@ h1 {
 }
 
 h2 {
-    font-family: 'Lexend Deca', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
     color: #5a5a5a;
@@ -93,7 +88,7 @@ h4, p {
 .header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 300px 1fr 310px 0.8fr 350px;
+    grid-template-columns: 300px 1fr 320px 0.8fr 350px;
     grid-template-rows: 75px;
     grid-template-areas:
     "dashboard . title bell user";
@@ -129,6 +124,7 @@ h4, p {
 
 .title {
     grid-area: title;
+    margin-left: 15px;
 }
 
 .bell {
@@ -167,11 +163,11 @@ h4, p {
     display: flex;
 }
 
-.searchbar>input {
+.searchbar input {
     border: none;
     width: calc(70%);
 }
-.searchbar>button {
+.searchbar button {
     background-color: #fff;
     border: none;
     width: calc(30%);
@@ -211,20 +207,20 @@ h4, p {
     color: #fff;
 }
 
-.links> ul> li {
+.links ul li {
     font-size: 1rem;
     padding-bottom: 13px;
     padding-left: 20px;
 }
 
-.links> ul> li> img {
+.links ul li img {
     position: relative;
     top: 9px;
     margin-right: 5px;
     height: 35px;
 }
 
-.links > ul > li:hover{
+.links ul li:hover{
     background-color: plum;
 }
 
@@ -316,7 +312,7 @@ h4, p {
     align-items: center;
 }
 
-.action-block > li >img {
+.action-block li img {
     width: 35px;
     margin: 10px 0;
 }
@@ -334,7 +330,7 @@ h4, p {
     flex-direction: column;
 }
 
-.headings > h2 {
+.headings h2 {
     -webkit-box-shadow: 3px 3px 3px -1px rgba(170, 170, 170, 0.6);
     box-shadow: 3px 3px 3px -1px rgba(170, 170, 170, 0.6);
     border-radius: 5px;
