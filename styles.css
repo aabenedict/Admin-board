@@ -112,7 +112,7 @@ h4, p {
     padding-left: 10px;
 }
 
-.btn-container>button {
+.header-btn {
     border: none;
     border-color: black;
     border-radius: 25px;
@@ -238,6 +238,10 @@ h4, p {
     box-shadow: 5px 10px 5px 1px rgba(110, 110, 110, 0.6);
 }
 
+.new-post:hover {
+    background-color: plum;
+}
+
 /* Main Styles */
 
 .content {
@@ -285,6 +289,24 @@ h4, p {
     box-shadow: 3px 0px 1px 1px rgba(0, 0, 0, 0.7);
     margin: 5px 0;
     margin-top: 10px;
+    background-color: thistle;
+    position: relative;
+}
+
+.answer::after {
+    content: "HOVER TO REVEAL";
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    padding: 20px 10px;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.answer:hover::after {
+    opacity: 0;
 }
 
 .action-block {
@@ -297,6 +319,12 @@ h4, p {
 .action-block > li >img {
     width: 35px;
     margin: 10px 0;
+}
+
+.action-img:hover {
+    background-color: plum;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 .headings {
@@ -334,4 +362,49 @@ h4, p {
     min-width: 400px;
 }
 
+/* Pop-Up Form Styles */
 
+#my-form {
+    position: fixed;
+    top: 75px;
+    left: 175px;
+    width: calc(100% - 175px);
+    height: calc(100% - 75px);
+    background-color: #ffffffed;
+    padding: 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#my-form input {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid black 1.5px;
+    width: calc(50%);
+}
+
+.form-submit {
+    padding: 10px 35px;
+    background-color: thistle;
+    border-radius: 25px;
+    color: white;
+}
+
+.form-submit:hover {
+    background-color: plum;
+}
+
+#my-form.open {
+    opacity: 1;
+    visibility: visible;
+}

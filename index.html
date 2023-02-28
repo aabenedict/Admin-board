@@ -17,9 +17,8 @@
     <header class="header">
         <div class="dashboard">
             <h2>Dashboard</h2>
-            <div class="btn-container">
-                <button class="header-btn">Upload</button>
-            </div>
+            <label for="open-file" class="header-btn">Upload</label>
+            <input type="file" id="open-file" hidden/>
         </div>
         <h1 class="title" >Sam Lam Electrician</h1>
         <button class="bell">
@@ -79,7 +78,7 @@
                     <img src="./img/privacy.png" alt="Privacy">
                     Privacy  
                 </li>  
-                <button class="new-post">New Post</button> 
+                <button id="open-form" class="new-post">New Post</button> 
         </div>
     </nav>
    
@@ -89,7 +88,7 @@
             <div class="projects">
                 <ul class="project">
                     <li class="question">whats brown and sticky?</li>
-                    <li class="answer">Hover to Reveal</li>
+                    <li class="answer">Stick</li>
                 </ul>
                 <ul class="action-block">
                     <li><img src="./img/save.png" alt="save icon" class="action-img"></li>
@@ -126,6 +125,15 @@
             </div>
         </section>
     </main>
+    <!-- Pop-Up Form (New Post)-->
+    <form id="my-form">
+        <label class="sr-only">Question</label>
+        <input id="question" type="text" placeholder="Question" name="question">
+        <label class="sr-only">Answer</label>
+        <input id="answer" type="text" placeholder="Answer" name="answer">
+        <button class="form-submit" type="submit">Submit</button>
+    </form>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
